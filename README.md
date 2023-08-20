@@ -36,7 +36,9 @@ P将实现一个网络版本的通讯录，模拟实现客户端与服务端的�
 
 - 搭建了客户端和服务端的基本框架
 - 实现了使用protobuf新增联系人的功能，但暂时没有实现联系人功能的本地存储，只实现了服务端stdout的信息打印。
-- 项目使用httplib库作为服务器，地址：https://github.com/yhirose/cpp-httplib。有兴趣的读者，可以下载我另一个仓库中的Reactor服务器作为底层来使用：https://github.com/Yufccode/Reactor-based-HyperWebServer
+- 项目使用httplib库作为服务器。有兴趣的读者，可以下载我另一个仓库中的Reactor服务器作为底层来使用
+- httplib地址：https://github.com/yhirose/cpp-httplib
+- Reactor服务器地址：https://github.com/Yufccode/Reactor-based-HyperWebServer
 
 ## 项目运行
 
