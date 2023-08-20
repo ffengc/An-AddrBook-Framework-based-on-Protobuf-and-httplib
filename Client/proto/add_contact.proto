@@ -1,0 +1,26 @@
+
+
+syntax = "proto3";
+package add_contact;
+
+
+message AddContactRequest {
+    string name = 1; // 姓名
+    int32 age = 2;
+    message Phone {
+        string number = 1;
+        enum PhoneType {
+            MP = 0;  // 移动电话
+            TEL = 1; // 固定电话
+        }
+        PhoneType type = 2;
+    }
+    repeated Phone phone = 3; // 电话信息
+}
+
+
+message AddContactRespones {
+    bool success = 1; // 表示服务调用是否成功
+    string error_desc = 2; // 错误原因
+    string uid = 3;
+}
